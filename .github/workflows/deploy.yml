@@ -39,6 +39,9 @@ jobs:
         with:
           project: "trirahmatgu-attrctrs-43"
           entrypoint: "jsr:@deno/nextjs-start"
+          include: |
+            ".next"
+            "public"
           root: "."
           
           
