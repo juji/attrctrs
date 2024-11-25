@@ -34,11 +34,6 @@ export default function two({
 }:DrawParams){  
 
   let idx = 0
-  let itt = itterationPerCycle
-  let cycle = totalCycle
-  
-  // const total = itt * cycle
-  let progress = 0
   let running = true
 
   let smallScreen = window.innerWidth < 768 || window.innerHeight < 662
@@ -59,7 +54,6 @@ export default function two({
   },() => {
     
     plotter.reset()
-    progress = 0
     idx = 0
     running = true
     context.translate(canvas.width/2, canvas.height/2);
@@ -84,27 +78,24 @@ export default function two({
 
     if(!running) return;
 
-    if(idx < cycle){
+    if(idx < totalCycle){
 
       requestAnimationFrame( animate );
 
-      for ( let i = 0; i < itt; i ++ ) {
+      for ( let i = 0; i < itterationPerCycle; i ++ ) {
         
         const [ ix, iy ] = plotter.calculate()
         const [ x, y ] = plotter.transform(ix, iy)
-        
+
         draw(
           x,
           y,
           context as CanvasRenderingContext2D,
           opacity
         )
-        
-        progress++;
 
       }
 
-      // onProgress && onProgress( 100 * progress / total )
       idx++
 
     }

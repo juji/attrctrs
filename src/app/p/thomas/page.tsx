@@ -23,7 +23,7 @@ export default function AizawaPage(){
   >
   <p>
     In the dynamical systems theory, 
-    Thomas' cyclically symmetric attractor is a 3D strange attractor 
+    Thomas&apos; cyclically symmetric attractor is a 3D strange attractor 
     originally proposed by René Thomas. 
     It has a simple form which is cyclically symmetric in the x,y, 
     and z variables and can be viewed as the trajectory of a frictionally 
@@ -36,7 +36,7 @@ export default function AizawaPage(){
     wikipedia.org</a>
   </p>
   <p>
-    For me, it looks like Voldermort's magic.
+    For me, it looks like Voldermort&apos;s magic.
   </p>
   <p>
     Code: <a target="_blank" rel="noreferrer" 

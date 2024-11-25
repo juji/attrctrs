@@ -50,9 +50,6 @@ export default function three({
   ]
 
   let idx = 0
-  let itt = itterationPerCycle;
-  let cycle = totalCycle;
-  let progress = 0
   let running = true
 
   debounceReset(() => {
@@ -66,7 +63,6 @@ export default function three({
   },() => {
 
     plotter.reset()
-    progress = 0
     idx = 0
     running = true
     vert = [
@@ -82,8 +78,8 @@ export default function three({
     if(!running) return;
 
     
-    if(idx < cycle){
-      for ( let i = 0; i < itt; i ++ ) {
+    if(idx < totalCycle){
+      for ( let i = 0; i < itterationPerCycle; i ++ ) {
         const [ ix, iy, iz ] = plotter.calculate()
         const [ x, y, z ] = plotter.transform(
           ix, 
@@ -92,7 +88,6 @@ export default function three({
         )
 
         vert.push(x, y, z);
-        progress++;
       }
       geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( vert, 3 ) );
       points.geometry = geometry

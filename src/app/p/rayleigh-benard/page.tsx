@@ -24,7 +24,7 @@ export default function AizawaPage(){
   Rayleigh-Benard. Upon creating this one, It struck me: Why does the shape of butterfly comes up often?
   What is it about butterfly? Are they the secret guardians of the world..?
 </p>
-<p>This one looks like Lorenz's.</p>
+<p>This one looks like Lorenz&apos;s.</p>
 
 <div style={{width:'100%',height:'0',paddingBottom:'41%',position:'relative'}}>
   <iframe src="https://giphy.com/embed/RnnPrNRmrF0wTgA3az" width="100%" height="100%" 

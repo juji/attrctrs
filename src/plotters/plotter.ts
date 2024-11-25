@@ -28,6 +28,7 @@ export class Plotter {
   }
 
   // transform, to make it pretty
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   transform(x:number, y:number, z?:number):number[]{
     throw new Error('The transform method should be overriden')
   }

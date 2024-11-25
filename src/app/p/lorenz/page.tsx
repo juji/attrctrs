@@ -16,7 +16,6 @@ export default function LorenzPage(){
       plotter="lorenz"
       threeDim={true}
       extraParams={{
-        scale: 15,
         itterationPerCycle: 50,
         totalCycle: 1000,
       }}
@@ -26,7 +25,7 @@ export default function LorenzPage(){
       first studied by mathematician and meteorologist Edward Lorenz. 
     </p>
     <p>
-      In popular media the "butterfly effect" stems from the real-world 
+      In popular media the &quot;butterfly effect&quot; stems from the real-world 
       implications of the Lorenz attractor, 
       namely that several different initial chaotic conditions evolve in phase 
       space in a way that never repeats, so all chaos is unpredictable.

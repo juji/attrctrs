@@ -45,8 +45,6 @@ export function Page({
       const draw = v[0]
       const Plot = v[1]
 
-      console.log('extraParams', extraParams)
-
       draw({
         canvas: document.querySelector('canvas#canvas') as HTMLCanvasElement,
         plotter: new Plot(),
@@ -54,7 +52,7 @@ export function Page({
       })
 
     })
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   return <div className={styles.page}>

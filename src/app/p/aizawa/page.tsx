@@ -25,7 +25,7 @@ export default function AizawaPage(){
         when applied iteratively on three-dimensional coordinates, 
         evolves in such a way as to have the resulting coordinates 
         map out a three dimensional shape, in this case a sphere with a tube-like 
-        structure penetrating one of it's axis.
+        structure penetrating one of it&apos;s axis.
       </p>
       <p>
         Source: <a target="_blank" rel="noreferrer" 

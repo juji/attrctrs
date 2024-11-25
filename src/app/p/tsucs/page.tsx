@@ -22,7 +22,7 @@ export default function AizawaPage(){
   >
   <p>
     The Three Scroll Unified Chaotic System (TSUCS) attractor.
-    I don't know why it has a long name, but it looks gorgeous.
+    I don&apos;t know why it has a long name, but it looks gorgeous.
   </p>
   <p>
     Attribution: <a target="_blank" rel="noreferrer" href="https://www.deviantart.com/chaoticatmospheres/art/Strange-Attractors-The-TSUCS-1-Attractor-376643333">

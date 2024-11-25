@@ -23,7 +23,7 @@ export default function AizawaPage(){
   <p>
     Clifford attractors are a type of iterative equation that traces the path of a 
     particle through a 2D space using functions of sine and cosine terms that make 
-    interesting "attractor" patterns (covering only some portions of the possible space, 
+    interesting &quot;attractor&quot; patterns (covering only some portions of the possible space, 
     in certain shapes).
   </p>
   <p>
