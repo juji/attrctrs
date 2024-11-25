@@ -7,7 +7,7 @@ export default class Svensson extends Plotter {
   b: number = 1.56;
   c: number = 1.4;
   d: number = -6.56; 
-  scale: number = 10
+  scale: number = 100
 
   constructor(){
     super({
@@ -23,7 +23,7 @@ export default class Svensson extends Plotter {
 
   transform(x: number, y: number):[number, number]{
     return [
-      x * this.scale * 0.7,
+      x * this.scale * 0.5,
       y * this.scale
     ]
   }
@@ -40,7 +40,7 @@ export default class Svensson extends Plotter {
     this.x = xt;
     this.y = yt;
 
-    return this.transform( this.x, this.y )
+    return [ this.x, this.y ]
     
   }
 }
