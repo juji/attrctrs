@@ -51,8 +51,8 @@ export default function Thumbnail({
     className={styles.link} 
     onMouseEnter={onMouseOver}
     onMouseLeave={onMouseLeave}
-    onFocus={onMouseOver}
-    onBlur={onMouseLeave}
+    onTouchStart={onMouseOver}
+    onTouchEnd={onMouseLeave}
     href={href}
     aria-label={label}
     data-text={name}
