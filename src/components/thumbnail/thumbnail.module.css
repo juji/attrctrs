@@ -1,0 +1,72 @@
+@keyframes image {
+  from {
+    transform: translateY(21px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+a.link{
+  --anim-delay: 0;
+
+  position: relative;
+  padding-top: 56.25%;
+  display: block;
+  
+  scroll-margin-top: 55px;
+  /*   
+  // to make scroll-margin-top works
+  // this element should not have overflow hidden 
+  // so we set the child to have it instead */
+  &>div{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & img{
+      image-rendering: pixelated;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: scale 500ms ease-out;
+      animation-name: image;
+      animation-duration: 400ms;
+      animation-fill-mode: both;
+      animation-delay: calc(100ms + (var(--anim-delay) * 100ms))
+    }
+
+    & span{
+      position: absolute;
+      display: block;
+      text-align: left;
+      left: 34px;
+      bottom: 34px;
+      color: rgba(189, 189, 189, 0.8);
+      font-size: 37px;
+      font-weight: 900;
+      line-height: 37px;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover{
+    & img{
+      scale: 1.3;
+    }
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:active{
+    scale: 0.95;
+  }
+}

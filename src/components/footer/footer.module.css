@@ -1,0 +1,11 @@
+
+
+
+.footer{
+  padding: 2rem;
+  background-color: #222;
+
+  & a{
+    color: #ff6363;
+  }
+}
