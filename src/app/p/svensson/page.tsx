@@ -21,7 +21,7 @@ export default function AizawaPage(){
     }}
   >
   <p>
-    The Johnny Svensson Attractor (created by Johnny Svensson) is a twist on the 
+    The Johnny Svensson Attractor (created by Johnny Svensson) is a twist on the{' '}
     <a href="https://www.google.com/search?q=Peter+de+Jong+attractor" 
       target="_blank"
       rel="noreferrer">Peter de Jong attractor</a>.
