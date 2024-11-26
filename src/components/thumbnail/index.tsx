@@ -53,6 +53,7 @@ export default function Thumbnail({
     onMouseLeave={onMouseLeave}
     onTouchStart={onMouseOver}
     onTouchEnd={onMouseLeave}
+    onTouchCancel={onMouseLeave}
     href={href}
     aria-label={label}
     data-text={name}
