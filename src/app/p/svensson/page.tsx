@@ -31,7 +31,7 @@ export default function AizawaPage(){
       href="https://sequelaencollection.home.blog/2d-chaotic-attractors/">
       sequelaencollection.home.blog</a>
   </p>
-  <p>The image is skewed, to make it looks more like a ring.</p>
+  <p>The image is skewed, to make it look more like a ring.</p>
   <p>Sadly, Johnny Svensson does not live in Mordor.</p>
   <p>
     Code: <a target="_blank" rel="noreferrer" 
